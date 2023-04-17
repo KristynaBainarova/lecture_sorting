@@ -24,6 +24,7 @@ def read_data(file_name):
 def main():
     my_data = read_data("numbers.csv")
     print(my_data["series_3"])
+    print("Ahoj")
 
 
 if __name__ == '__main__':
