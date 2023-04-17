@@ -34,15 +34,37 @@ def selection_sort(num_array):
 
     return num_array
 
+def bubble_sort(num_list):
+    n = len(num_list)
+
+    for i in range(n - 1):
+
+        for idx in range(n - i - 1):
+            if num_list[idx] > num_list[idx + 1]:
+                num_list[idx], num_list[idx + 1] = num_list[idx + 1], num_list[idx]
+    return (num_list)
+
+def insertion_sort(nums):
+
+    n = len(nums)
+    while n < len(nums):
+        for i in range(n - 1):
+
+            for idx in range(n - i - 1):
+                if nums[idx] > nums[idx + 1]:
+                    nums[idx], nums[idx + 1] = nums[idx + 1], nums[idx]
+        n += 1
+    return (nums)
 
 
 def main():
     my_data = read_data("numbers.csv")
     print(my_data["series_1"])
     selection_sort_result = selection_sort(my_data["series_1"])
-    print(selection_sort_result[])
+    print(selection_sort_result[""])
     bubble_sort_result = bubble_sort(my_data["series_1"])
-    print(bubble_sort_result[])
+    print(bubble_sort_result[""])
+    insertion_sort_result() = insertion_sort(my_data["series_1"]
 
 
 
